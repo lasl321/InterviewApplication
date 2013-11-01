@@ -1,0 +1,19 @@
+﻿@model dynamic
+<!doctype html>
+<html>
+    <head>
+        <title>Please log in</title>
+    </head>
+    <body>
+        @using (Html.BeginForm("HandleForm", "Home"))
+        {
+            <div>
+                <input type="text" id="Username" name="Username">
+                <br>
+                <input type="text" id="Password" name="Password">
+                <br>
+                <input type="submit" value="Submit" id="submitButton">
+            </div>
+        }
+    </body>
+</html>
